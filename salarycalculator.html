@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="stylesheet" href="styles.css">
+            <script src="jquery.js" charset="utf-8"></script>
+            <script src="salarycalculator.js" charset="utf-8"></script>
+        </head>
+        <body>
+            <header>Salary Calculator</header>
+
+
+        
+            <div class="switch">Dark mode:              
+                <span class="dayNight">OFF</span>
+            </div>
+
+
+
+                <h2>Add Employee:</h2>
+                    <div>
+                        <input placeholder="First Name" id="firstNameInput">
+                        <input placeholder="Last Name" id="lastNameInput">
+                        <input placeholder="ID" id="idInput">
+                        <input placeholder="Title" id="titleInput">
+                        <input placeholder="Annual Salary" id="salaryInput">
+                    </div>
+                    <div>
+                        <button id="inputEmployee">Submit</button>
+                    </div>
+                <h2>Employees:</h2>
+                    <table id="employeeTable">
+                        <thead id="employeeHeader">
+
+                        </thead>
+                        <tbody id="employeeBody">
+                            
+                        </tbody>                        
+
+                    </table>
+                <p id="salaryDisplay">Total Monthly: $0</p>
+        </body>
+    </html>
