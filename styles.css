@@ -1,3 +1,10 @@
+body {
+    background-color: #f0f0f0;
+    color: #202020;
+    border-color: #202020;
+    transition: .9s;
+}
+
 table, th, td {
     border: 1px solid black;
   }
@@ -6,9 +13,35 @@ table, th, td {
       width: 1%;
   }
 
+button {
+    cursor: pointer;
+}
+
+.sortButton {
+    width: 15em;
+    margin-bottom: 1em;
+}
+
+.boldedP {
+    font-weight: bold;
+}
+
+.rightDisplay {
+    text-align: right;
+    padding-right: 7em;
+}
+
+.centerDisplay {
+    text-align: center;
+}
+
+.offCenter {
+    text-align: center;
+    padding-left: 45%;
+}
 
 
-.dayNight {
+.btn {
     cursor: pointer;
     border: 1px solid black;
 }
@@ -17,8 +50,18 @@ table, th, td {
     background-color: #202020;
     color: #f0f0f0;
     border-color: #f0f0f0;
+    transition: .9s;
 }
 
 .inRed {
     background-color: red;
 } 
+
+.pagehead {
+    text-align: center;
+    background-color: #9c9c9c;
+}
+
+.tableHead, .tableHead * {
+    background-color: #A3A6A8;
+}

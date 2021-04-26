@@ -8,37 +8,68 @@
             <script src="salarycalculator.js" charset="utf-8"></script>
         </head>
         <body>
-            <header>Salary Calculator</header>
+            <h1 class="pagehead">Salary Calculator</h1>
 
 
         
             <div class="switch">Dark mode:              
-                <span class="dayNight">OFF</span>
+                <span class="btn dayNight">OFF</span>
+            </div>
+                <br>
+            <p class="boldedP">
+                Sort Table:
+            </p>
+
+
+            <div>
+                <button class="sortButton" id="sortFNA">Sort Ascending First Name</button>
+                <button class="sortButton" id="sortFND">Sort Descending First Name</button>
+                    <br>
+                <button class="sortButton" id="sortLNA">Sort Ascending Last Name</button>
+                <button class="sortButton" id="sortLND">Sort Descending Last Name</button>
+                    <br>
+                <button class="sortButton" id="sortIDA">Sort Ascending ID</button>
+                <button class="sortButton" id="sortIDD">Sort Descending ID</button>
+                    <br>
+                <button class="sortButton" id="sortTA">Sort Ascending Title</button>
+                <button class="sortButton" id="sortTD">Sort Descending Title</button>
+                    <br>
+                <button class="sortButton" id="sortSA">Sort Ascending Salary</button>
+                <button class="sortButton" id="sortSD">Sort Descending Salary</button>
             </div>
 
 
-
-                <h2>Add Employee:</h2>
-                    <div>
+                <h1>Add Employee:</h1>
+                    <div class="centerDisplay">
                         <input placeholder="First Name" id="firstNameInput">
                         <input placeholder="Last Name" id="lastNameInput">
-                        <input placeholder="ID" id="idInput">
+                        <input placeholder="ID Number" id="idInput">
                         <input placeholder="Title" id="titleInput">
                         <input placeholder="Annual Salary" id="salaryInput">
                     </div>
-                    <div>
+                        <br>
+                    <div class="offCenter">
                         <button id="inputEmployee">Submit</button>
                     </div>
-                <h2>Employees:</h2>
+
+
+                <h1>Employees:</h1>
                     <table id="employeeTable">
                         <thead id="employeeHeader">
-
+                            <tr class="tableHead">
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>ID Number</th>
+                                <th>Title</th>
+                                <th>Annual Salary</th>
+                                <th></th>
+                            </tr>
                         </thead>
                         <tbody id="employeeBody">
                             
                         </tbody>                        
 
                     </table>
-                <p id="salaryDisplay">Total Monthly: $0</p>
+                <p class="rightDisplay" id="salaryDisplay">Total Monthly: $0</p>
         </body>
     </html>
